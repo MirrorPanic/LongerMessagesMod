@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "longermessagesmod",
+	"version": "${version}",
+	"name": "Longer Messages Mod",
+	"description": "This is a mod that increases the chat messages character limit from 256 to 1024",
+	"authors": [
+		"MirrorPanic"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/MirrorPanic/LongerMessagesMod"
+	},
+	"license": "MIT",
+	"icon": "assets/longermessagesmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mirrorpanic.longermessagesmod.LongerMessagesMod"
+		],
+		"fabric-datagen": [
+			"net.mirrorpanic.longermessagesmod.LongerMessagesModDataGenerator"
+		],
+		"client": [
+			"net.mirrorpanic.longermessagesmod.LongerMessagesModClient"
+		]
+	},
+	"mixins": [
+		"longermessagesmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
