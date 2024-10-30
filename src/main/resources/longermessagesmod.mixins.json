@@ -3,6 +3,8 @@
 	"package": "net.mirrorpanic.longermessagesmod.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
+		"ChatMessageC2SPacketAccessor",
+		"ChatMessageC2SPacketMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
