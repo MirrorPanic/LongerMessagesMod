@@ -3,9 +3,12 @@
 	"package": "net.mirrorpanic.longermessagesmod.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
-	}
+	},
+	"client": [
+		"ChatScreenAccessor",
+		"ChatScreenMixin"
+	]
 }
